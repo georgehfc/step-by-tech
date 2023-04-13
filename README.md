@@ -1,2 +1,2 @@
-# step-by-tech
-First steps into technology study track provided by CML + le wagon
+# ebac-react
+React from Zero to Pro's code submissions
