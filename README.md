@@ -1,2 +1,5 @@
 # ebac-react
-React from Zero to Pro's code submissions
+🚀 React from Zero to Pro's code submissions
+
+## Status
+🧪 Onboarding...
