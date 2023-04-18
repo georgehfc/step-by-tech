@@ -23,3 +23,9 @@ ul {
   list-style-type: none;
   margin-left: -40px;
 }
+a {
+  text-decoration: none;
+}
+li.animate__animated {
+  animation-duration: 3s;
+}
