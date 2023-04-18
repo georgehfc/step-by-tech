@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: rgb(48, 48, 48);
+  background-color: rgb(252, 252, 237);
+  text-align: center;
+  margin: 0 8px;
+  font-family: 'Fira Sans', sans-serif;
+}
+h1 {
+  color: rgb(54, 60, 146);
+  font-size: 32px;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 2px;
+  text-decoration: underline wavy rgb(54, 60, 146);
+  margin-bottom: 24px;
+}
+ul {
+  font-size: 20px;
+  list-style-type: none;
+  margin-left: -40px;
+}
