@@ -29,3 +29,17 @@ a {
 li.animate__animated {
   animation-duration: 3s;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 640px) {
+  body {
+    background-color: orangered;
+  }
+}
+
+/* breakpoints mais comuns
+tlm: 640px
+tablet: 768px
+laptop: 1024px
+desktop: 1280px
+xl desktop: 1536px */
