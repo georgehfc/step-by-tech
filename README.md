@@ -2,8 +2,11 @@
 🚀 React from Zero to Pro's code submissions
 
 ## Status
-🧪 Onboarding [Done!]
-👨‍💻 HTML [Done!]
-🎨 CSS [Done!]
-🖥 Font Awesome, Animate.css, GitHub Pages [Done!]
-🚊 Ruby [Done!]
+🧪 Onboarding <br>
+👨‍💻 HTML <br>
+🎨 CSS <br>
+🖥 Font Awesome, Animate.css, GitHub Pages <br>
+🚊 Ruby <br>
+
+## Personal Project
+💦 Bebedouros de Lisboa [In Progress...]
