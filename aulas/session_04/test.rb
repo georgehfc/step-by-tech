@@ -1,5 +1,5 @@
 # IRB = Interactive Ruby
-puts "### Hello Ruby! ###"
+puts '### Hello Ruby! ###'
 # puts true.class
 # puts false.class
 
