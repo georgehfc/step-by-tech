@@ -52,7 +52,7 @@ p {
   font-weight: 400;
 }
 span {
-  opacity: 70%;
+  opacity: 85%;
   font-size: 0.9em;
   font-style: italic;
 }
@@ -61,7 +61,7 @@ ul {
   padding-left: 0;
 }
 img {
-  width: 180px;
+  width: 140px;
   border-radius: 4px;
   margin-left: auto;
   object-fit: cover;
