@@ -21,6 +21,11 @@ h1 {
   margin-bottom: 24px;
 }
 
+h2 {
+  margin: 32px;
+  font-size: 40px;
+}
+
 ul {
   font-size: 20px;
   list-style-type: none;
@@ -60,7 +65,7 @@ label {
   font-size: 14px;
 }
 
-#cursorText{
+#cursorText {
   position:absolute;
   border:1px solid #323C92;
 }
@@ -116,14 +121,15 @@ img:hover {
 footer {
   margin: 24px 0;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .water {
   position: relative;
   max-width: 95%;
   height: 500px;
-  margin: 12px auto;
+  margin: 32px auto;
   background-image: linear-gradient(0deg, #182848, #323C92);
   border-radius: 32px;
   display: flex;
@@ -134,6 +140,25 @@ footer {
 .text {
   padding-top: 40px;
   color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.6;
+}
+
+.text p {
+  margin: 0 40px;
+}
+
+.text img {
+  margin-top: 40px;
+  width: 80px;
+}
+
+div.item {
+  margin-bottom: 40px;
+}
+
+#logo-lw {
+  width: 150px;
 }
 
 /* WAVES */
@@ -141,7 +166,7 @@ footer {
   position: relative;
   width: 100%;
   height: 160px;
-  border-radius: 8px;
+  border-radius: 32px;
 }
 
 .parallax > use {
@@ -180,7 +205,7 @@ footer {
 /* MEDIA QUERIES */
 @media (max-width: 640px) {
   body {
-    background-color: orangered;
+    padding: 0;
   }
 
   ul {
@@ -195,5 +220,14 @@ footer {
   .waves {
     height: 200px;
     min-height: 40px;
+  }
+
+  .text h2 {
+    font-size: 28px;
+    margin: 12px;
+  }
+
+  .text img {
+    margin: 0;
   }
 }
