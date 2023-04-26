@@ -10,6 +10,11 @@ body {
   font-family: 'Fira Sans', sans-serif;
 }
 
+h2::selection, label::selection, p::selection, a::selection {
+  color: #FCFCED;
+  background: #323C92;
+}
+
 h1 {
   color: #323C92;
   font-size: 22px;
@@ -51,6 +56,7 @@ ul a {
   text-decoration: none;
   line-height: 40px;
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
 li.animate__animated {
@@ -63,6 +69,8 @@ p {
 
 label {
   font-size: 14px;
+  cursor: text;
+  line-height: 32px;
 }
 
 #cursorText {
@@ -80,7 +88,7 @@ label {
   padding: 8px;
 }
 
-img {
+.item img {
   width: 95%;
   margin: 8px;
   border-radius: 4px;
@@ -88,7 +96,7 @@ img {
   position: relative;
 }
 
-img:hover {
+.item img:hover {
   cursor: crosshair;
   transform: scale(1.02);
   transition: all .2s;
@@ -159,6 +167,7 @@ div.item {
 
 #logo-lw {
   width: 150px;
+  cursor: pointer;
 }
 
 /* WAVES */
