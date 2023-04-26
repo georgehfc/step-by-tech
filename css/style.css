@@ -42,6 +42,12 @@ ul a {
   font-size: 0.875rem;
 }
 
+.anchor a {
+  text-decoration: none;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+
 li.animate__animated {
   animation-duration: 3s;
 }
@@ -103,7 +109,7 @@ img:hover {
 }
 
 footer {
-  margin-top: 24px;
+  margin: 24px 0;
   display: flex;
   justify-content: center;
 }
@@ -112,7 +118,7 @@ footer {
   position: relative;
   max-width: 95%;
   height: 500px;
-  background-image: linear-gradient(0deg, #182848, rgb(54, 60, 146));
+  background-image: linear-gradient(0deg, #182848, #323C92);
   border-radius: 32px;
   display: flex;
   margin: 12px auto;
