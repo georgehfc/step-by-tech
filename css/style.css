@@ -60,6 +60,11 @@ label {
   font-size: 14px;
 }
 
+#cursorText{
+  position:absolute;
+  border:1px solid #323C92;
+}
+
 .content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -92,7 +97,7 @@ img:hover {
   width: 375px;
   height: 375px;
   z-index: -1;
-  background-color: rgb(54, 60, 146);
+  background-color: #323C92;
   mix-blend-mode: multiply;
 }
 
@@ -118,19 +123,24 @@ footer {
   position: relative;
   max-width: 95%;
   height: 500px;
+  margin: 12px auto;
   background-image: linear-gradient(0deg, #182848, #323C92);
   border-radius: 32px;
   display: flex;
-  margin: 12px auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text {
+  padding-top: 40px;
+  color: white;
 }
 
 /* WAVES */
 .waves {
-  align-self: flex-end;
   position: relative;
   width: 100%;
   height: 160px;
-  opacity: 0.2;
   border-radius: 8px;
 }
 
