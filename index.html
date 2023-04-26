@@ -18,7 +18,7 @@
 <body>
   <header>
     <ul>
-      <li class="logo">
+      <li class="logo animate__animated animate__fadeIn">
         <a href="/">
           <h1><strong>Bebedouros</strong><br>de Lisboa</h1>
         </a>
@@ -36,6 +36,22 @@
     </ul>
   </header>
 
+  <div class="water">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+      <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+      <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+    </svg>
+  </div>
+
+
   <div class="content">
     <img src="./images/bebedouro_sao_jorge.jpeg" alt="Bebedouro São Jorge" id="sao_jorge">
     <label for="sao_jorge">Bebedouro São Jorge</label>
@@ -45,6 +61,8 @@
     <label for="epal">Bebedouro EPAL</label>
     <div class="triangle"></div>
     <div class="circle"></div>
+    <img src="./images/bebedouro_marques_pombal.jpeg" alt="Bebedouro Marquês de Pombal" id="pombal">
+    <label for="pombal">Bebedouro Marquês de Pombal</label>
   </div>
 
   <footer>

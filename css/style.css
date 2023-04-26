@@ -7,18 +7,18 @@ body {
   color: rgb(48, 48, 48);
   background-color: rgb(252, 252, 237);
   text-align: center;
-  margin: 0 8px;
   font-family: 'Fira Sans', sans-serif;
-  padding: 12px;
 }
 
 img {
   width: 600px;
   margin: 8px;
+  border-radius: 4px;
+  position: relative;
 }
 
 img:hover {
-  cursor:crosshair;
+  cursor: crosshair;
   transform: scale(1.02);
   transition: all .2s;
 }
@@ -36,7 +36,7 @@ li.logo {
 
 h1 {
   color: rgb(54, 60, 146);
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 100;
   text-align: center;
   letter-spacing: 2px;
@@ -48,9 +48,7 @@ h1 {
 ul {
   font-size: 20px;
   list-style-type: none;
-  padding: 0px;
-  margin: 0;
-
+  padding: 16px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -74,44 +72,93 @@ label {
   font-size: 14px;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
 .triangle {
   transform: translate3d(-25.1232px, 5.85023px, 0px) rotate(40deg);
-
   position: absolute;
-  right: -300px;
+  left: -300px;
   top: 300px;
   z-index: -1;
   width: 375px;
   height: 375px;
-
   background-color: rgb(54, 60, 146);
   mix-blend-mode: multiply;
 }
 
 .circle {
   transform: translate3d(-12.5616px, 2.92512px, 0px) rotate(0deg);
-
   width: 250px;
   height: 250px;
   position: absolute;
   z-index: -2;
   top: 250px;
-  right: -20px;
-
+  right: -150px;
   background-color: orangered;
   border-radius: 100%;
 }
 
-.content {
+.water {
+  position: relative;
+  width: 95%;
+  height: 500px;
+  background-image: linear-gradient(0deg, #182848, rgb(54, 60, 146));
+  border-radius: 8px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 12px auto;
+}
+
+.waves {
+  align-self: flex-end;
+  position: relative;
+  width: 100%;
+  height: 80px;
+  opacity: 0.2;
+  border-radius: 8px;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 20s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 30s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 25s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 35s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% {
+    transform: translate3d(85px,0,0);
+  }
 }
 
 /* MEDIA QUERIES */
 @media (max-width: 640px) {
   body {
     background-color: orangered;
+  }
+  .waves {
+    height: 50px;
+    min-height: 40px;
   }
 }
 
