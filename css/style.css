@@ -10,7 +10,7 @@ body {
   font-family: 'Fira Sans', sans-serif;
 }
 
-h2::selection, label::selection, p::selection, a::selection {
+h2::selection, label::selection, p::selection, a::selection, h1::selection, span::selection {
   color: #FCFCED;
   background: #323C92;
 }
@@ -18,12 +18,16 @@ h2::selection, label::selection, p::selection, a::selection {
 h1 {
   color: #323C92;
   font-size: 22px;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
   letter-spacing: 2px;
   line-height: 140%;
   text-decoration: underline wavy #323C92;
   margin-bottom: 24px;
+}
+
+h1 span {
+  font-weight: 500;
 }
 
 h2 {
@@ -46,8 +50,12 @@ li.logo {
   margin-right: auto;
 }
 
-a:visited {
+a:visited, a:active, a:link {
   color: #303030;
+}
+
+a:hover {
+  font-weight: 700;
 }
 
 ul a {
@@ -106,7 +114,7 @@ label {
   transition: all .2s;
 }
 
-.triangle {
+#triangle {
   transform: translate3d(-25.1232px, 5.85023px, 0px) rotate(40deg);
   position: absolute;
   top: 200px;
@@ -118,7 +126,7 @@ label {
   mix-blend-mode: multiply;
 }
 
-.circle {
+#circle {
   transform: translate3d(-12.5616px, 2.92512px, 0px) rotate(0deg);
   position: absolute;
   top: 50px;
@@ -128,6 +136,19 @@ label {
   z-index: -2;
   background-color: orangered;
   border-radius: 100%;
+}
+
+#shape {
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 0 orangered;
+  position: absolute;
+  bottom: 400px;
+  left: -200px;
+  width: 375px;
+  height: 375px;
+  z-index: -3;
+  background-color: #323C92;
+  mix-blend-mode: multiply;
 }
 
 footer {
@@ -170,7 +191,7 @@ div.item {
 }
 
 #logo-lw {
-  width: 150px;
+  width: 120px;
   cursor: pointer;
 }
 
