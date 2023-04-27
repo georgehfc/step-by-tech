@@ -46,6 +46,10 @@ li.logo {
   margin-right: auto;
 }
 
+a:visited {
+  color: #303030;
+}
+
 ul a {
   color: inherit;
   text-decoration: none;
