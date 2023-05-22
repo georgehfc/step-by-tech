@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bebedouros de Lisboa</title>
+    <title><LOCAL>Bebedouros de Lisboa</title>
     <link rel="icon" href="./images/favicon.ico">
     <!-- GOOGLE FONT: Fira Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,10 +56,20 @@
       </svg>
     </div>
 
+    <!-- SEARCH BOX -->
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="Queres um Bebedouro específico?">
+      <button type="submit" id="search-btn">Buscar</button>
+    </form>
 
+    <!-- SEARCH RESULTS -->
+    <div id="search-results"></div>
+
+    <!-- WATER FOUNTAINS -->
     <div class="content">
       <div id="triangle"></div>
       <div id="circle"></div>
+
       <div class="item">
         <img src="./images/bebedouro_sao_jorge.jpeg" alt="Bebedouro Av. Liberdade (São Jorge)" id="sao_jorge">
         <label for="sao_jorge">Bebedouro Av. Liberdade (São Jorge)</label>
@@ -90,7 +100,7 @@
       </div>
       <div class="item">
         <img src="./images/bebedouro_campo_grande.jpeg" alt="Bebedouro Campo Grande" id="campo_grande">
-        <label for="campo_grande">Bebedouro Av. Julio Dinis</label>
+        <label for="campo_grande">Bebedouro Campo Grande</label>
       </div>
       <div class="item">
         <img src="./images/bebedouro_cidade_universitaria.jpeg" alt="Bebedouro Campo Grande (Cidade Universitária)" id="cidade_universitaria">
@@ -155,6 +165,19 @@
       <div id="shape"></div>
     </div>
 
+    <!-- ITEM -->
+    <!-- <div class="item">
+      <img src="https://informacoeseservicos.lisboa.pt/fileadmin/espacos/imagens/bebedouro_belem.JPG" alt="" id="">
+      <label for="">💦</label>
+    </div> -->
+
+    <!-- LOAD FOUNTAINS CSV -->
+    <!-- <div class="content" id="csv_content">
+      <script src="./js/app.js">
+
+      </script>
+    </div> -->
+
     <footer>
       <p>Tecnologias utilizadas:</p>
       <ul>
@@ -168,15 +191,13 @@
       </div>
     </footer>
 
+    <!-- WATER WAVE PRELOADER -->
+    <div class="container">
+      <div class="water_wave"></div>
+    </div>
+
     <!-- SCRIPTS -->
-    <script>
-      console.log('Hi! Parsing CSV:');
-      async function getData() {
-        const response = await fetch('./Bebedouros.csv');
-        const fountains = await response.text();
-        console.log(fountains);
-      }
-      getData();
-    </script>
+    <script src="./js/preloader.js"></script>
+    <script src="./js/search.js"></script>
   </body>
 </html>
