@@ -13,5 +13,7 @@ Objetivos:
 🖥 Font Awesome, Animate.css, GitHub Pages <br>
 🚊 Ruby <br>
 
-## Project
-💦 Bebedouros de Lisboa [In Progress...]
+## Project - Bebedouros de Lisboa 💦 
+- Created general structure and style
+- Added water fountains
+- Implementing page preloader and water fountain search features...
