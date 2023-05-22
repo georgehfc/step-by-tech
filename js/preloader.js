@@ -1,8 +1,12 @@
 window.addEventListener("load", () => {
-  const preloader = document.querySelector(".preloader");
+  const waterWave = document.querySelector(".water_wave");
+  const container = document.querySelector(".container");
 
-  preloader.classList.add("preloader-hidden");
-  loader.addEventListener("transitionend", () => {
-    document.body.removeChild("preloader");
-  })
-})
+  waterWave.classList.add("water_wave-hidden");
+  container.classList.add("container-hidden");
+
+  container.addEventListener("transitionend", () => {
+    container.remove("div");
+  });
+
+});
