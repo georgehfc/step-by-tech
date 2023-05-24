@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><LOCAL>Bebedouros de Lisboa</title>
-    <link rel="icon" href="./images/favicon.ico">
+    <link rel="icon" href="./src/images/favicon.ico">
     <!-- GOOGLE FONT: Fira Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,7 @@
           </a>
         </li>
         <li>
-          <a href="https://www.lewagon.com/lisbon"><img src="./images/logo-lewagon.svg" alt="Logo Le Wagon" id="logo-lw"></a>
+          <a href="https://www.lewagon.com/lisbon"><img src="./src/images/logo-lewagon.svg" alt="Logo Le Wagon" id="logo-lw"></a>
         </li>
       </ul>
     </header>
@@ -38,7 +38,7 @@
         <p>Encontre fontes de água nas ruas da cidade.
           Os bebedouros listados pertencem à Câmara Municipal de Lisboa.
         </p>
-        <a href="https://informacoeseservicos.lisboa.pt/contactos/"><img src="./images/logo_cml_w.svg" alt="Logo CML em branco" class="logo"></a>
+        <a href="https://informacoeseservicos.lisboa.pt/contactos/"><img src="./src/images/logo_cml_w.svg" alt="Logo CML em branco" class="logo"></a>
       </div>
 
       <!-- SIMPLE CSS WAVE EFFECT • https://codepen.io/goodkatz/pen/LYPGxQz -->
@@ -58,125 +58,20 @@
 
     <!-- SEARCH BOX -->
     <form id="search-form">
-      <input type="text" id="search-input" placeholder="Queres um Bebedouro específico?">
-      <button type="submit" id="search-btn">Buscar</button>
+      <input type="text" id="search-input" placeholder="Onde buscas?">
+      <button type="submit" id="search-btn">Buscar Bebedouro</button>
     </form>
-
-    <!-- SEARCH RESULTS -->
-    <div id="search-results"></div>
 
     <!-- WATER FOUNTAINS -->
     <div class="content">
       <div id="triangle"></div>
       <div id="circle"></div>
 
-      <div class="item">
-        <img src="./images/bebedouro_sao_jorge.jpeg" alt="Bebedouro Av. Liberdade (São Jorge)" id="sao_jorge">
-        <label for="sao_jorge">Bebedouro Av. Liberdade (São Jorge)</label>
-      </div>
-      <div class="item">
-        <img src="./images/bebedouro_tivoli.jpeg" alt="Bebedouro Av. Liberdade (Tivoli)" id="tivoli">
-        <label for="tivoli">Bebedouro Av. Liberdade (Tivoli)</label>
-      </div>
-      <div class="item">
-        <img src="./images/bebedouroAvLiberdade_ALA_2190.jpeg" alt="Bebedouro Av. Liberdade (EPAL)" id="epal">
-        <label for="epal">Bebedouro Av. Liberdade (EPAL)</label>
-      </div>
-      <div class="item">
-        <img src="./images/bebedouro_marques_pombal.jpeg" alt="Bebedouro Av. Liberdade (Marquês de Pombal)" id="pombal">
-        <label for="pombal">Bebedouro Av. Liberdade (Marquês de Pombal)</label>
-      </div>
-      <div class="item">
-        <img src="./images/bebedouro_duque_avila.jpeg" alt="Bebedouro Av. República / Av. Duque de Ávila" id="republica">
-        <label for="republica">Bebedouro Av. República / Av. Duque de Ávila</label>
-      </div>
-      <div class="item">
-        <img src="./images/bebedouro_julio_dinis.jpeg" alt="Bebedouro Av. Julio Dinis" id="julio_dinis">
-        <label for="julio_dinis">Bebedouro Av. Julio Dinis</label>
-      </div>
-      <div class="item">
-        <img src="./images/bebedouro_cais_sodre.jpeg" alt="Bebedouro Cais do Sodré" id="cais_sodre">
-        <label for="cais_sodre">Bebedouro Cais do Sodré</label>
-      </div>
-      <div class="item">
-        <img src="./images/bebedouro_campo_grande.jpeg" alt="Bebedouro Campo Grande" id="campo_grande">
-        <label for="campo_grande">Bebedouro Campo Grande</label>
-      </div>
-      <div class="item">
-        <img src="./images/bebedouro_cidade_universitaria.jpeg" alt="Bebedouro Campo Grande (Cidade Universitária)" id="cidade_universitaria">
-        <label for="cidade_universitaria">Bebedouro Campo Grande (Cidade Universitária)</label>
-      </div>
-      <div class="item">
-        <img src="./images/bebedouro_NOS.jpeg" alt="Bebedouro Campo Grande (NOS)" id="nos">
-        <label for="nos">Bebedouro Campo Grande (NOS)</label>
-      </div>
-      <div class="item">
-        <img src="./images/bebedouro_campo_pequeno.jpeg" alt="Bebedouro Campo Pequeno (Jardim)" id="campo_pequeno">
-        <label for="campo_pequeno">Bebedouro Campo Pequeno (Jardim)</label>
-      </div>
-      <div class="item">
-        <img src="./images/bebedouro_carnide.jpeg" alt="Bebedouro Carnide" id="carnide">
-        <label for="carnide">Bebedouro Carnide</label>
-      </div>
-      <div class="item">
-        <img src="./images/bebedouro_belem.jpeg" alt="Bebedouro Belém – Jerónimos" id="belem">
-        <label for="belem">Bebedouro Belém – Jerónimos</label>
-      </div>
-      <div class="item">
-        <img src="./images/bebedouro_entrecampos.jpeg" alt="Bebedouro Entrecampos (Av. República – Estação)" id="entrecampos">
-        <label for="entrecampos">Bebedouro Entrecampos (Av. República – Estação)</label>
-      </div>
-      <div class="item">
-        <img src="./images/bebedouro_martim_moniz.jpeg" alt="Bebedouro Martim Moniz" id="martim_moniz">
-        <label for="martim_moniz">Bebedouro Martim Moniz</label>
-      </div>
-      <div class="item">
-        <img src="./images/bebedouro_parque_nacoes_1.jpeg" alt="Bebedouro Parque das Nações – FIL" id="fil">
-        <label for="fil">Bebedouro Parque das Nações – FIL</label>
-      </div>
-      <div class="item">
-        <img src="./images/bebedouro_parque_nacoes.jpeg" alt="Bebedouro Parque das Nações (Gare do Oriente)" id="gare_oriente">
-        <label for="gare_oriente">Bebedouro Parque das Nações (Gare do Oriente)</label>
-      </div>
-      <div class="item">
-        <img src="./images/bebedouro_ribeira_naus.jpeg" alt="Bebedouro Ribeira das Naus" id="ribeira_naus">
-        <label for="ribeira_naus">Bebedouro Ribeira das Naus</label>
-      </div>
-      <div class="item">
-        <img src="./images/bebedouro_rossio.jpeg" alt="Bebedouro Rossio / Rua Augusta" id="rossio">
-        <label for="rossio">Bebedouro Rossio / Rua Augusta</label>
-      </div>
-      <div class="item">
-        <img src="./images/bebedouro_maternidade.jpeg" alt="Bebedouro Rua Viriato (Maternidade Alfredo da Costa)" id="maternidade">
-        <label for="maternidade">Bebedouro Rua Viriato (Maternidade Alfredo da Costa)</label>
-      </div>
-      <div class="item">
-        <img src="./images/bebedouro_saldanha.jpeg" alt="Bebedouro Saldanha" id="saldanha">
-        <label for="saldanha">Bebedouro Saldanha</label>
-      </div>
-      <div class="item">
-        <img src="./images/bebedouro_santa_apolonia.jpeg" alt="Bebedouro Santa Apolónia" id="sta_apolonia">
-        <label for="sta_apolonia">Bebedouro Santa Apolónia</label>
-      </div>
-      <div class="item">
-        <img src="./images/bebedouro_praca_comercio.jpeg" alt="Bebedouro Terreiro Paço" id="praca_comercio">
-        <label for="praca_comercio">Bebedouro Terreiro Paço</label>
-      </div>
+      <!-- ITEMS -->
+      <div id="search-results"></div>
+
       <div id="shape"></div>
     </div>
-
-    <!-- ITEM -->
-    <!-- <div class="item">
-      <img src="https://informacoeseservicos.lisboa.pt/fileadmin/espacos/imagens/bebedouro_belem.JPG" alt="" id="">
-      <label for="">💦</label>
-    </div> -->
-
-    <!-- LOAD FOUNTAINS CSV -->
-    <!-- <div class="content" id="csv_content">
-      <script src="./js/app.js">
-
-      </script>
-    </div> -->
 
     <footer>
       <p>Tecnologias utilizadas:</p>
