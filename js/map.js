@@ -1,10 +1,24 @@
-const map = L.map('map').setView([38.717275, -9.142455555555555], 13);
+const map = L.map('map').setView([38.717275, -9.142455555555555], 12);
 
 // CREATE TILES & ATTRIBUTION
-const attribution = '&copy; <a href="https://www.openstreetmap.org/copyright"OpenStreetMap</a> contributors';
+const attribution = '&copy <a href="https://www.openstreetmap.org/copyright"OpenStreetMap</a> OpenStreetMap contributors';
 const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 const tiles = L.tileLayer(tileUrl, { attribution });
 tiles.addTo(map);
 
-// ADD MARKER
-L.marker([38.717275, -9.142455555555555]).addTo(map);
+// MARKER ICON
+const fountainIcon = L.icon({
+  iconUrl: '../src/images/drinking_fountain.svg',
+  iconSize:     [20, 54.1], // size of the icon
+  iconAnchor:   [0, 10], // point of the icon which will correspond to marker's location
+  popupAnchor:  [10, 0] // point from which the popup should open relative to the iconAnchor
+});
+
+// ADD MARKERS
+for (const waterFountain in waterFountains) {
+  const lat = waterFountains[waterFountain].latitude;
+  const long = waterFountains[waterFountain].longitude;
+  const location = waterFountains[waterFountain].location;
+  L.marker([lat, long], {icon: fountainIcon, alt: 'Bebedouro ' + location})
+    .addTo(map).bindPopup('Bebedouro ' + location);
+}
