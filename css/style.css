@@ -357,6 +357,7 @@ div.item {
   height: 400px;
   margin: 0 16px;
   border-radius: 8px;
+  z-index: o;
 }
 
 /* MEDIA QUERIES */
