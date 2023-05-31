@@ -9,8 +9,11 @@ tiles.addTo(map);
 // MARKER ICON
 const fountainIcon = L.icon({
   iconUrl: '../src/images/drinking_fountain.png',
-  iconSize:     [16, 43.21], // size of the icon
-  iconAnchor:   [0, 10], // point of the icon which will correspond to marker's location
+  shadowUrl: '../src/images/drinking_fountain_shadow.png',
+  iconSize: [16, 43.21], // size of the icon
+  shadowSize: [16, 43.21],
+  iconAnchor: [0, 10], // point of the icon which will correspond to marker's location
+  shadowAnchor: [-5, 4],
   popupAnchor:  [10, 0] // point from which the popup should open relative to the iconAnchor
 });
 

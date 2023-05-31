@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="219px" height="422px" viewBox="0 0 219 422" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <defs>
+        <filter x="-48.8%" y="-18.1%" width="197.6%" height="136.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="20" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.4">
+        <path d="M95.3556267,376 L125.955741,376 C144.973127,373.197345 158.807943,362.595588 167.460188,344.19473 C171.387002,335.843516 172.049488,271.628584 169.433831,183.639702 C166.818172,95.6508211 148.310319,73.8639557 129.171762,73.8639557 C129.171762,67.2307272 129.171762,58.8803857 129.171762,48.8129313 C114.69204,43.7290229 100.525234,43.7290229 86.6713449,48.8129313 C86.6713449,58.9801582 86.6713449,64.0243932 86.6713449,73.8639557 C72.0561538,73.8639557 48,96.463052 48,183.639702 C48,270.816352 48.3988584,336.908478 52.3197299,344.19473 C61.093502,360.499244 75.4388009,371.101001 95.3556267,376 Z" id="Path" fill="#293180" fill-rule="nonzero" filter="url(#filter-1)"></path>
+    </g>
+</svg>
