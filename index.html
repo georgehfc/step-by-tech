@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- STYLE -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- LEAFLET.CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <!-- LEAFLET.JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   </head>
 
   <body>
@@ -69,9 +73,11 @@
 
       <!-- ITEMS -->
       <div id="search-results"></div>
-
       <div id="shape"></div>
     </div>
+
+    <!-- MAP -->
+    <div id="map"></div>
 
     <footer>
       <p>Tecnologias utilizadas:</p>
@@ -80,6 +86,7 @@
         <li><a href="https://fontawesome.com/" target="_blank">Font Awesome <i class="fa-solid fa-font-awesome"></i></a></li>
         <li class="animate__animated animate__fadeIn animate animate__repeat-2"><a href="https://animate.style/" target="_blank">Animate.css</a></li>
         <li><a href="https://pages.github.com/">GitHub Pages  <i class="fa-brands fa-github-alt"></i></a></li>
+        <li><a href="https://leafletjs.com/">LeafletJS <i class="fa-solid fa-leaf"></i></a></li>
       </ul>
       <div class="anchor">
         <a href="#">To the top of the page! ⚓️</a>
@@ -94,5 +101,6 @@
     <!-- SCRIPTS -->
     <script src="./js/preloader.js"></script>
     <script src="./js/search.js"></script>
+    <script src="./js/map.js"></script>
   </body>
 </html>
