@@ -1,3 +1,4 @@
+// GPS Coordinates ---> https://www.itilog.com/
 const map = L.map('map').setView([38.717275, -9.142455555555555], 12);
 
 // CREATE TILES & ATTRIBUTION
