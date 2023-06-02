@@ -360,6 +360,10 @@ div.item {
   z-index: o;
 }
 
+img.leaflet-marker-icon {
+  background-image: url(./);
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 640px) {
   body {
