@@ -8,8 +8,8 @@ tiles.addTo(map);
 
 // MARKER ICON
 const fountainIcon = L.icon({
-  iconUrl: '../src/images/drinking_fountain.png',
-  shadowUrl: '../src/images/drinking_fountain_shadow.png',
+  iconUrl: 'https://res.cloudinary.com/daxtfj13g/image/upload/v1685665853/drinking_fountain_fdnbvq.svg',
+  shadowUrl: 'https://res.cloudinary.com/daxtfj13g/image/upload/v1685665853/drinking_fountain_shadow_uthkre.svg',
   iconSize: [16, 43.21], // size of the icon
   shadowSize: [16, 43.21],
   iconAnchor: [0, 10], // point of the icon which will correspond to marker's location
