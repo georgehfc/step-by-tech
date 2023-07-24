@@ -22,7 +22,8 @@ var waterFountains = [
   { location: "Rua Viriato Maternidade Alfredo da Costa", latitude: "38.7325167", longitude: "-9.147580555555555", latlong: "38° 43\' 57.06\" N | 9° 8\' 51.29\" W", img_address: "https://informacoeseservicos.lisboa.pt/fileadmin/espacos/imagens/bebedouro_maternidade.jpg" },
   { location: "Saldanha Praça Duque de Saldanha", latitude: "38.7340778", longitude: "-9.14543611111111", latlong: "38° 44\' 2.68\" N | 9° 8\' 43.57\" W", img_address: "https://informacoeseservicos.lisboa.pt/fileadmin/espacos/imagens/bebedouro_saldanha.jpg" },
   { location: "Santa Apolónia Rua Caminhos de Ferro", latitude: "38.7134167", longitude: "-9.12315", latlong: "38° 42\' 48.30\" N | 9° 7\' 23.34\" W", img_address: "https://informacoeseservicos.lisboa.pt/fileadmin/espacos/imagens/bebedouro_santa_apolonia.jpg" },
-  { location: "Terreiro Paço Avenida Infante Dom Henrique", latitude: "38.7070917", longitude: "-9.133386111111111", latlong: "38° 42\' 25.53\" N | 9° 8\' 0.19\" W", img_address: "https://informacoeseservicos.lisboa.pt/fileadmin/espacos/imagens/bebedouro_praca_comercio.jpg" }
+  { location: "Terreiro Paço Avenida Infante Dom Henrique", latitude: "38.7070917", longitude: "-9.133386111111111", latlong: "38° 42\' 25.53\" N | 9° 8\' 0.19\" W", img_address: "https://informacoeseservicos.lisboa.pt/fileadmin/espacos/imagens/bebedouro_praca_comercio.jpg" },
+  { location: "Galerias Atlanta Park", latitude: "38.75078", longitude: "-9.17184", latlong: "38° 45\' 2.808\" N | 9° 10\' 18.624\" W", img_address: "" }
 ];
 
 // Function to handle form submission
